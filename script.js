@@ -27,41 +27,7 @@ setInterval(() => {
 }, 1000);
 
 // Form_Validation Section
-let submitBtn = document.getElementById("sendMessege");
-submitBtn.addEventListener("click", () => {
-    let name = document.getElementById("name");
-    let email_Input = document.getElementById("emain_Input");
-    let textarea = document.getElementById("textarea");
-    if (email_Input.value === "") {
-        email_Input.value = "Please enter your email before submit";
-        email_Input.style.color = "red";
-        setTimeout(() => {
-            email_Input.value = "";
-            email_Input.style.color = "black";
-        }, 2000);
-    }
-    if (name.value === "") {
-        name.value = "Please enter your name before submit";
-        name.style.color = "red";
-        setTimeout(() => {
-            name.value = "";
-            name.style.color = "black";
 
-        }, 2000);
-    }
-    else {
-        let formSuccess = document.querySelector(".formSuccess");
-        formSuccess.style.display = "flex";
-        setTimeout(() => {
-            formSuccess.style.display = "none";
-        }, 2000);
-        name.value = "";
-        email_Input.value = "";
-        formSuccess.value = "";
-        textarea.value = "";
-    }
-
-})
 
 // Social Media Click Section
 let facebook = document.querySelector(".fa-facebook");

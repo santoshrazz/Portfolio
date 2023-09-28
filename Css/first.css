@@ -1,0 +1,101 @@
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(95 158 160 / 75%);
+    ;
+}
+
+/* Home Section Styling */
+
+.firstSection {
+    display: flex;
+    width: 100%;
+    min-height: 90vh;
+}
+
+.textleft {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+}
+
+.centertextleft {
+    gap: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.centertextleft h2 {
+    font-size: 3rem;
+    color: rgb(255, 255, 255);
+    font-family: inherit;
+    font-weight: 900;
+}
+
+.centertextleft p {
+    color: white;
+    font-size: 1.2rem;
+    /* font: small-caption; */
+}
+
+.hireMe {
+    padding: 0.5rem 1.4rem;
+    border-radius: 0.4rem;
+    background: rgb(48, 48, 146);
+    color: white;
+    font-size: 1.2rem;
+    border: none;
+    cursor: pointer;
+}
+
+.hireMe:hover {
+    background: linear-gradient(rgb(194, 139, 146), rgb(75, 176, 2));
+    color: rgb(255, 255, 255);
+    transition: 1s ease;
+}
+
+.imgright {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imgbackground {
+    background: linear-gradient(rgb(243, 243, 87), rgb(2, 129, 2));
+    border: 1px solid green;
+    border-radius: 1rem;
+    width: 60%;
+    /* filter: blur(4px); */
+    height: 65%;
+}
+
+#profileImage {
+    width: 100%;
+    height: 100%;
+}
+
+@media screen and (max-width: 500px) {
+    .firstSection {
+        flex-direction: column-reverse;
+        align-items: center;
+        min-height: 70%;
+    }
+
+    .textleft,
+    .imgright {
+        width: 80%;
+    }
+}
